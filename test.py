@@ -20,6 +20,7 @@ gmail = "https://mail.google.com"
 while(True==True):
 	r = sr.Recognizer()
 	with sr.Microphone() as source:
+		system('clear')		
 		r.adjust_for_ambient_noise(source, duration=1)
 		#print("Say something!")
 		tts=gTTS(text="say any thing you want to browse in google or youtube or wikipedia")
